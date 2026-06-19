@@ -1,4 +1,4 @@
 model:
-  default: "provider/model-id"
+  default: "gemini-3.5-flash"
   provider: "custom"
   base_url: "http://9router:20128/v1"
