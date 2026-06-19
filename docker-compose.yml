@@ -14,6 +14,8 @@ services:
   hermes-agent:
     image: nousresearch/hermes-agent:latest
     container_name: hermes-agent
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
     volumes:
       - hermes-data:/opt/data
     restart: unless-stopped
