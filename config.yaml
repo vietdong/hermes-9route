@@ -1,0 +1,4 @@
+model:
+  default: "provider/model-id"
+  provider: "custom"
+  base_url: "http://9router:20128/v1"
