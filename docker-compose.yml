@@ -18,6 +18,8 @@ services:
     environment:
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
       - OPENAI_API_KEY=sk_9router
+      - GATEWAY_ALLOW_ALL_USERS=true
+
     volumes:
       - hermes-data:/opt/data
       - ./config.yaml:/root/.hermes/config.yaml
