@@ -2,5 +2,4 @@ model:
   default: "gemini-3.5-flash"
   provider: "custom"
   base_url: "http://9router:20128/v1"
-  api_key: "sk_9router"
 
