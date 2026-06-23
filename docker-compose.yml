@@ -21,15 +21,11 @@ services:
       - GATEWAY_ALLOW_ALL_USERS=true
 
     volumes:
-      - hermes-data:/opt/data
-      - ./config.yaml:/opt/data/config.yaml
-      - ./.env:/opt/data/.env
-
+      - ./:/opt/data
 
     restart: unless-stopped
     depends_on:
       - 9router
-
 
 volumes:
   9router-data:
